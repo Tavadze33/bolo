@@ -1,47 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ka">
 <head>
-  <title>მთავარი გვერდი</title>
   <meta charset="UTF-8" />
-  <style>
-    nav {
-      background-color: #e0e0e0;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      margin-right: 15px;
-      color: #2e8b57;
-      font-weight: bold;
-    }
-<p> იმედია გამოვაააა
-    button {
-      background-color: #2e8b57;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ჩემი საიტი</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">მთავარი</a> |
-    <a href="about.html">ჩემს შესახებ</a>
-  </nav>
+  <h1>cmax მსოფლიოში ნამბერ ვანია</h1>
 
-  <h1>მოგესალმებით ჩემს საიტზე</h1>
-  <p>ეს ჩემი პირველი ვებსაიტია და მე ვარ დავით</p>
+  <!-- სურათი -->
+  <img src="image.jpg" alt="ჩემი სურათი" width="300" />
 
-  <button onclick="alert('გამარჯობა, დავით!')">თხარე</button>
+  <!-- ღილაკი -->
+  <button id="myButton">გლიჯე</button>
 
-  <br><br>
-
-  <a href="https://www.youtube.com" target="_blank">ტოოპე</a>
+  <script>
+    document.getElementById("myButton").onclick = function () {
+      alert("გილოცავ, ღილაკი დაჭერილია!");
+    };
+  </script>
 </body>
 </html>
